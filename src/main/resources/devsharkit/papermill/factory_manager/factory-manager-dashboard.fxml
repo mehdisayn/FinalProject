@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="devsharkit.papermill.Controller.factoryManager.FactoryManagerDashboard">
+   <children>
+      <Label layoutX="14.0" layoutY="51.0" prefHeight="23.0" prefWidth="213.0" text="Welcome, Factory Manager" textFill="#c31717">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="101.0" mnemonicParsing="false" onAction="#FMmonitorProductionOnAction" prefHeight="25.0" prefWidth="131.0" text="Monitor Production" />
+      <Button layoutX="14.0" layoutY="137.0" mnemonicParsing="false" onAction="#FMplanShiftsOnAction" prefHeight="25.0" prefWidth="131.0" text="Plan Shifts" />
+      <Button layoutX="14.0" layoutY="173.0" mnemonicParsing="false" onAction="#FMapproveMaterialsOnAction" prefHeight="25.0" prefWidth="131.0" text="Approve Materials" />
+      <Button layoutX="422.0" layoutY="100.0" mnemonicParsing="false" onAction="#FMdailySummeryOnAction" prefHeight="52.0" prefWidth="155.0" text="Daily Summary" />
+      <Button layoutX="14.0" layoutY="210.0" mnemonicParsing="false" onAction="#FMmachineUsageOnAction" prefHeight="25.0" prefWidth="131.0" text="Machine Usage" />
+      <Button layoutX="14.0" layoutY="246.0" mnemonicParsing="false" onAction="#FMlogisticsSyncOnAction" prefHeight="25.0" prefWidth="131.0" text="Logistics Sync" />
+      <Button layoutX="14.0" layoutY="282.0" mnemonicParsing="false" onAction="#FMperformanceReviewOnAction" text="Performance Review" />
+      <Button layoutX="14.0" layoutY="318.0" mnemonicParsing="false" onAction="#FMresolveOnAction" prefHeight="25.0" prefWidth="131.0" text="Resolve Bottlenecks" />
+      <Button layoutX="499.0" layoutY="318.0" mnemonicParsing="false" onAction="#FMsignoutOnAction" text="Sign-Out" />
+      <Label layoutX="14.0" layoutY="22.0" prefHeight="23.0" prefWidth="258.0" text="Hakkani Pulp &amp; Paper Mills Ltd" textFill="#1a00ff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
