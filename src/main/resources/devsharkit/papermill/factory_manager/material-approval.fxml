@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="devsharkit.papermill.Controller.factoryManager.MaterialApproval"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="devsharkit.papermill.Controller.factoryManager.MaterialApproval">
+   <children>
+      <Label layoutX="14.0" layoutY="23.0" text=" Approve Material Requests" textFill="#d00000">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="FMmaterialApprovalTableView" layoutX="19.0" layoutY="100.0" prefHeight="200.0" prefWidth="563.0">
+        <columns>
+          <TableColumn fx:id="FMmaterialApprovalReqIDColumn" prefWidth="129.0" text="Request ID" />
+          <TableColumn fx:id="FMmaterialApprovalMaterialColumn" prefWidth="154.0" text="Material" />
+            <TableColumn fx:id="FMmaterialApprovalQuantityColumn" prefWidth="147.0" text="Quantity" />
+            <TableColumn fx:id="FMmaterialApprovalCostColumn" prefWidth="131.0" text="Cost" />
+        </columns>
+      </TableView>
+      <Button layoutX="517.0" layoutY="309.0" mnemonicParsing="false" onAction="#FMmaterialApprovalApproveOnAction" text="Approve" textFill="#22940b" />
+      <Button layoutX="441.0" layoutY="309.0" mnemonicParsing="false" onAction="#FMmaterialApprovalRejectOnAction" prefHeight="25.0" prefWidth="65.0" text="Reject" textFill="#a41010" />
+      <Button layoutX="19.0" layoutY="309.0" mnemonicParsing="false" onAction="#FMmaterialApprovalViewStockOnAction" prefHeight="25.0" prefWidth="151.0" text="View Stock" />
+   </children>
 </AnchorPane>
