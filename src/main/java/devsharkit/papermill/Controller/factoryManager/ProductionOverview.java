@@ -1,5 +1,10 @@
 package devsharkit.papermill.Controller.factoryManager;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+
 public class ProductionOverview
 {
     @javafx.fxml.FXML
