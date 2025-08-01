@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="devsharkit.papermill.Controller.ceo.CeoDashboard"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="devsharkit.papermill.Controller.ceo.CeoDashboard">
+   <children>
+      <Label layoutX="14.0" layoutY="54.0" text="Welcome, CEO" textFill="#d00000">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="24.0" text="Hakkani Pulp &amp; Paper Mills Ltd" textFill="#1e00cf">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="95.0" mnemonicParsing="false" onAction="#productionMonitorCEOOnAction" prefHeight="25.0" prefWidth="174.0" text="Production Monitor" />
+      <Button layoutX="14.0" layoutY="130.0" mnemonicParsing="false" onAction="#financialReportCEOOnAction" prefHeight="25.0" prefWidth="174.0" text="Financial Reports" />
+      <Button layoutX="14.0" layoutY="165.0" mnemonicParsing="false" onAction="#expenditureApprovalCEOOnAction" prefHeight="25.0" prefWidth="174.0" text="Expenditure Approvals" />
+      <Button layoutX="14.0" layoutY="200.0" mnemonicParsing="false" onAction="#DeptPerfCEOOnAction" prefHeight="25.0" prefWidth="174.0" text="Department Performance" />
+      <Button layoutX="14.0" layoutY="234.0" mnemonicParsing="false" onAction="#setPoliciesCEOOnAction" prefHeight="25.0" prefWidth="174.0" text="Set Policies" />
+      <Button layoutX="14.0" layoutY="269.0" mnemonicParsing="false" onAction="#boardMeetingsCEOOnAction" prefHeight="25.0" prefWidth="174.0" text="Board Meetings" />
+      <Button layoutX="14.0" layoutY="304.0" mnemonicParsing="false" onAction="#complianceCEOOnAction" prefHeight="25.0" prefWidth="174.0" text="Compliance" />
+      <Button layoutX="372.0" layoutY="91.0" mnemonicParsing="false" onAction="#strategyCEOOnAction" prefHeight="59.0" prefWidth="174.0" text="Strategy Panel" />
+      <Button layoutX="470.0" layoutY="304.0" mnemonicParsing="false" onAction="#signoutCEOOnAction" prefHeight="25.0" prefWidth="76.0" text="signOut" />
+   </children>
 </AnchorPane>

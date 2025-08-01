@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="devsharkit.papermill.Controller.ceo.StrategyPanel"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="devsharkit.papermill.Controller.ceo.StrategyPanel">
+   <children>
+      <Label layoutX="14.0" layoutY="34.0" prefHeight="23.0" prefWidth="180.0" text="Strategy Panel" textFill="#fc0000">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableStrategyRecords" layoutX="17.0" layoutY="186.0" prefHeight="200.0" prefWidth="567.0">
+        <columns>
+          <TableColumn prefWidth="99.0" text="Quarter" />
+          <TableColumn fx:id="deptColumn" prefWidth="101.0" text="Department" />
+            <TableColumn fx:id="summaryColumn" prefWidth="271.0" text="Strategy Summary" />
+            <TableColumn fx:id="dateSavedColumn" prefWidth="95.0" text="Date Saved" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="comboQuarter" layoutX="119.0" layoutY="150.0" prefWidth="150.0" />
+      <ComboBox fx:id="comboDepartment" layoutX="119.0" layoutY="115.0" prefWidth="150.0" />
+      <Label layoutX="35.0" layoutY="154.0" prefHeight="17.0" prefWidth="66.0" text="Quarter:" />
+      <Label layoutX="35.0" layoutY="119.0" prefHeight="17.0" prefWidth="85.0" text="Department:" />
+      <TextArea fx:id="txtStrategyNotes" layoutX="283.0" layoutY="114.0" prefHeight="60.0" prefWidth="239.0" promptText="Write your strategic decision here..." />
+      <Button layoutX="529.0" layoutY="150.0" mnemonicParsing="false" onAction="#saveStrategOnAction" prefHeight="10.0" prefWidth="55.0" text="Save" />
+   </children>
 </AnchorPane>
