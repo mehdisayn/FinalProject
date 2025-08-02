@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="devsharkit.papermill.Controller.hr.AttendanceDashboard">
+   <children>
+      <DatePicker layoutX="149.0" layoutY="44.0" />
+      <TableView layoutX="97.0" layoutY="100.0" prefHeight="200.0" prefWidth="227.0">
+        <columns>
+          <TableColumn prefWidth="79.19998168945312" text="Employee ID" />
+          <TableColumn prefWidth="71.20001220703125" text="Name" />
+            <TableColumn prefWidth="75.0" text="Status" />
+        </columns>
+      </TableView>
+      <ComboBox layoutX="249.0" layoutY="336.0" prefWidth="150.0" />
+      <Button layoutX="440.0" layoutY="100.0" mnemonicParsing="false" text="View" />
+      <Button layoutX="440.0" layoutY="174.0" mnemonicParsing="false" text="Refresh" />
+      <Button layoutX="440.0" layoutY="247.0" mnemonicParsing="false" text="Export" />
+      <Label layoutX="97.0" layoutY="48.0" text="Date" />
+      <Label layoutX="97.0" layoutY="340.0" text="Filte by dept or status" />
+   </children>
+</AnchorPane>

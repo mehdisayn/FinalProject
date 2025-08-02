@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maintenanceofficer.ScheduleForm">
+   <children>
+      <ComboBox layoutX="83.0" layoutY="56.0" prefWidth="150.0" promptText="machineComboBox" />
+      <DatePicker layoutX="363.0" layoutY="56.0" />
+      <TextField layoutX="74.0" layoutY="131.0" text="scheduleTimeField" />
+      <TextArea layoutX="300.0" layoutY="131.0" prefHeight="200.0" prefWidth="200.0" text="notesTextArea" />
+      <Button layoutX="93.0" layoutY="216.0" mnemonicParsing="false" text="submitButton" />
+      <Button layoutX="93.0" layoutY="301.0" mnemonicParsing="false" text="cancelButton" />
+   </children>
+</AnchorPane>
