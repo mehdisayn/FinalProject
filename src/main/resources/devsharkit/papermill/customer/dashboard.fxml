@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="devsharkit.papermill.Controller.customer.DashboardController">
+   <children>
+      <Label layoutX="188.0" layoutY="31.0" text="Customer DashBoard">
+         <font>
+            <Font name="Serif Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="261.0" layoutY="83.0" mnemonicParsing="false" onAction="#handlePlaceOrder" text="Place Order" />
+      <Button layoutX="258.0" layoutY="119.0" mnemonicParsing="false" onAction="#handleTrackOrders" text="Track Orders" />
+      <Button layoutX="237.0" layoutY="151.0" mnemonicParsing="false" onAction="#handleInvoicesAndPayments" text="Invoices &amp; Payments" />
+      <Button layoutX="244.0" layoutY="188.0" mnemonicParsing="false" onAction="#handleSubmitComplaint" text="Submit Complaint" />
+      <Button layoutX="263.0" layoutY="223.0" mnemonicParsing="false" onAction="#handleEditProfile" text="Edit Profile" />
+      <Button layoutX="250.0" layoutY="259.0" mnemonicParsing="false" onAction="#handleRequestSample" text="Request sample" />
+      <Button layoutX="253.0" layoutY="291.0" mnemonicParsing="false" onAction="#handleMakePayment" text="Make Payment" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="472.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="devsharkit.papermill.Controller.customer.TrackOrderController">
+   <children>
+      <TableView fx:id="trackOrderTableView" layoutX="37.0" layoutY="61.0" prefHeight="200.0" prefWidth="526.0">
+        <columns>
+          <TableColumn fx:id="orderIdCol" prefWidth="161.0" text="Order ID" />
+          <TableColumn fx:id="dateCol" prefWidth="112.0" text="Date" />
+            <TableColumn fx:id="productCol" prefWidth="114.0" text="Product" />
+            <TableColumn fx:id="statusCol" prefWidth="139.0" text="Status" />
+        </columns>
+      </TableView>
+      <TextArea fx:id="orderDescriptionTextArea" layoutX="37.0" layoutY="276.0" prefHeight="165.0" prefWidth="526.0" />
+   </children>
+</AnchorPane>

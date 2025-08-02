@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.accountant.TaxAuditController">
+   <children>
+      <Label layoutX="170.0" layoutY="40.0" text="Tax &amp; Audit Preparation">
+         <font>
+            <Font name="Serif Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="taxAndAuditTableView" layoutX="31.0" layoutY="100.0" prefHeight="138.0" prefWidth="545.0">
+        <columns>
+          <TableColumn fx:id="taxTypeCol" prefWidth="190.0" text="Tax Type" />
+          <TableColumn fx:id="amountCol" prefWidth="182.0" text="Amount" />
+            <TableColumn fx:id="statusCol" prefWidth="172.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="108.0" layoutY="286.0" mnemonicParsing="false" onAction="#handleGenTaxReportButton" text="Generate Tax Report" />
+      <Button layoutX="405.0" layoutY="286.0" mnemonicParsing="false" onAction="#handleExportForAuditButton" text="Export for Audit" />
+      <Label fx:id="errorLabel" layoutX="162.0" layoutY="327.0" prefHeight="17.0" prefWidth="340.0" />
+   </children>
+</AnchorPane>
