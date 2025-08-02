@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="devsharkit.papermill.Controller.customer.OrderController">
+   <children>
+      <Label layoutX="238.0" layoutY="32.0" text="Place Order">
+         <font>
+            <Font name="Serif Bold" size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="productTypeComboBox" layoutX="40.0" layoutY="85.0" prefWidth="150.0" promptText="Product Type" />
+      <ComboBox fx:id="sizeComboBox" layoutX="225.0" layoutY="85.0" prefWidth="150.0" promptText="Size" />
+      <TextField fx:id="quantityTextField" layoutX="412.0" layoutY="85.0" promptText="Quantity: " />
+      <TextField fx:id="deliveryAddressTextField" layoutX="226.0" layoutY="121.0" promptText="Delivery Address: " />
+      <DatePicker fx:id="expectedDeliveryDatePIcker" layoutX="213.0" layoutY="159.0" promptText="Expected Delivery Date: " />
+      <Button layoutX="264.0" layoutY="223.0" mnemonicParsing="false" onAction="#handleOrderButton" prefHeight="47.0" prefWidth="73.0" text="Order" />
+      <Label fx:id="errorLabel" layoutX="412.0" layoutY="238.0" prefHeight="17.0" prefWidth="174.0" />
+   </children>
+</AnchorPane>
